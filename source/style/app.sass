@@ -1,0 +1,62 @@
+@charset "utf-8"
+@import "helpers/_reset.scss"
+@import "helpers/_respond.scss"
+@import "helpers/_fonts"
+@import "helpers/_variable"
+@import "helpers/_mixin"
+@import "layout/bootstrap_modals"
+@import "helpers/modal"
+
+// General Style
+*
+  outline: none
+button
+  font: inherit
+img
+  max-width: 100%
+  max-height: 100%
+.bold
+  font-weight: bold
+
+.hidden
+  display: none
+
+body
+  font-weight: normal
+  font-style: normal
+  color: #000
+  background-color: $white
+  padding: 0 !important
+  font-size: 14px
+
+.wr
+  width: 100%
+  background-repeat: no-repeat
+  background-position: center top
+  background-size: cover
+  z-index: 99
+  margin: 0 auto
+  position: relative
+  overflow: hidden
+  .block
+    width: 100%
+    position: relative
+    margin: 0 auto
+    +breakpoint(large)
+      padding-left: 5px
+      padding-right: 5px
+      max-width: 1170px
+    +breakpoint(small)
+      padding-left: 10px
+      padding-right: 10px
+      max-width: 340px
+
+
+
+
+
+
+
+
+
+

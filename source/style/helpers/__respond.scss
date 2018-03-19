@@ -1,0 +1,18 @@
+$screen: "only screen" !default;
+
+$small: "#{$screen} and (max-width: 969px)" !default;
+$large: "#{$screen} and (min-width: 970px)" !default;
+
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media #{$small} { @content; }
+  }
+  @else if $point == large {
+    @media #{$large} { @content; }
+  }
+  @else {
+    @warn "This breakpoint '#{$point}' doesn't exist!";
+  }
+}
+
+

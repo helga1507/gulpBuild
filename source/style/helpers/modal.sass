@@ -1,0 +1,110 @@
+.modal
+  .modal-dialog
+    +breakpoint(large)
+      width: 450px
+    +breakpoint(small)
+      width: 90%
+  button.close
+    position: absolute
+    right: 20px
+    top: 20px
+    &::before
+      content: "\f00d"
+      color: #000000
+      font-family: 'FontAwesome'
+      font-style: normal
+  .modal-content
+    border-radius: 5px
+    +breakpoint(large)
+      padding: 40px 30px 30px
+    +breakpoint(small)
+      padding: 40px 15px 20px
+    .modal-title
+      font-size: 1.6em
+      font-weight: bold
+      text-align: center
+      text-transform: uppercase
+    .modal-subtitle
+      line-height: 1.25em
+      margin-top: 15px
+      font-weight: 300
+      text-align: center
+    .form-control
+      background-color: #f6f6f6
+      margin-top: 15px
+      width: 100%
+    .btn-default
+      width: 100%
+      margin-top: 20px
+      padding: 20px 2%
+.modal-video
+  .modal-dialog
+    +breakpoint(large)
+      width: 750px
+    +breakpoint(small)
+      width: 95%
+    .modal-content
+      padding: 50px 15px
+    iframe
+      display: block
+      margin: 30px auto 0px
+      max-width: 100%
+#modal-part
+  .modal-dialog
+    +breakpoint(large)
+      width: 480px
+#senk
+  .modal-dialog
+    .modal-title
+      font-size: 28px
+    .modal-subtitle
+      font-size: 18px
+      text-align: center
+      margin-top: 5%
+
+#modal-privacy
+  +breakpoint(large)
+    .modal-dialog
+      width: 980px !important
+  +breakpoint(small)
+    .modal-dialog
+      width: 94% !important
+  .modal-content
+    +breakpoint(large)
+      padding: 60px 30px
+    +breakpoint(small)
+      padding: 10% 3%
+    .title
+      +breakpoint(large)
+        font-size: 30px
+      +breakpoint(small)
+        font-size: 1.5em
+      font-weight: bold
+    .subtitle
+      color: #8d8d8d
+      +breakpoint(large)
+        font-size: 18px
+        padding: 20px 0px
+      +breakpoint(small)
+        font-size: 1em
+        padding: 5% 0
+    p
+      line-height: 1.5
+      +breakpoint(large)
+        font-size: 16px
+    .p-title
+      font-weight: bold
+      padding: 20px 0 10px
+      text-align: center
+    .p
+      padding-bottom: 5px
+    .p-tit
+      text-align: right
+      margin-top: 2%
+
+.open-modal-privacy
+  background-color: #000 !important
+.open-privacy
+  cursor: pointer
+  &:hover
+    text-decoration: underline !important
